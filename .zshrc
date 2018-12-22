@@ -7,6 +7,8 @@ ENABLE_CORRECTION="true"
 COMPLETION_WAITING_DOTS="true"
 
 # antigen
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=7" 
+
 if ! [ -f ./antigen.zsh ]; then
     curl -L git.io/antigen > ./antigen.zsh
 fi
