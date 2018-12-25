@@ -1,19 +1,26 @@
+# preparation
+LOCAL_BIN=${HOME}/.local/bin
+if ! [ -d ${LOCAL_BIN} ]; then
+    mkdir -p ${LOCAL_BIN}
+fi
 
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+# configuration
+export PATH=${LOCAL_BIN}:/usr/local/bin:$PATH
 export SSH_KEY_PATH="~/.ssh/dsa_id"
 
-HYPHEN_INSENSITIVE="true"
-ENABLE_CORRECTION="true"
 COMPLETION_WAITING_DOTS="true"
+ENABLE_CORRECTION="true"
+HYPHEN_INSENSITIVE="true"
 
 # antigen
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=7" 
 
-if ! [ -f ./antigen.zsh ]; then
-    curl -L git.io/antigen > ./antigen.zsh
+if ! [ -f ${LOCAL_BIN}/antigen.zsh ]; then
+    curl -L git.io/antigen > ${LOCAL_BIN}/antigen.zsh
+    chmod +x ${LOCAL_BIN}/antigen.zsh
 fi
 
-source ./antigen.zsh
+source antigen.zsh
 
 antigen use oh-my-zsh
 antigen bundle command-not-found
