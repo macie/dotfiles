@@ -16,7 +16,7 @@ HYPHEN_INSENSITIVE="true"
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=7" 
 
 if ! [ -f ${LOCAL_BIN}/antigen.zsh ]; then
-    curl -L git.io/antigen > ${LOCAL_BIN}/antigen.zsh
+    curl -sS -L git.io/antigen > ${LOCAL_BIN}/antigen.zsh
     chmod +x ${LOCAL_BIN}/antigen.zsh
 fi
 
