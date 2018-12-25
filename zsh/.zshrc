@@ -33,3 +33,9 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 antigen theme refined
 
 antigen apply
+
+# update notification
+outdated_pkgs="$(pacman -Qu | wc -l)"
+if [ ${outdated_pkgs} -gt 0 ]; then
+    echo " ${outdated_pkgs} outdated packages"
+fi
