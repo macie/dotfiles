@@ -1,5 +1,7 @@
 # dotfiles
 
+[![Build Status](https://travis-ci.org/macie/dotfiles.svg?branch=master)](https://travis-ci.org/macie/dotfiles)
+
 A collection of my [configuration files](http://dotfiles.github.io/)
 
 ## Usage
