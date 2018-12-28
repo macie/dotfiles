@@ -16,8 +16,10 @@ HYPHEN_INSENSITIVE="true"
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=7" 
 
 if ! [ -f ${LOCAL_BIN}/antigen.zsh ]; then
+    echo -n " → Installing antigen... "
     curl -sS -L git.io/antigen > ${LOCAL_BIN}/antigen.zsh
     chmod +x ${LOCAL_BIN}/antigen.zsh
+    echo "done!"
 fi
 
 source antigen.zsh
