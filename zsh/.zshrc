@@ -37,7 +37,7 @@ antigen theme refined
 antigen apply
 
 # update notification
-outdated_pkgs="$(pacman -Qu | wc -l)"
+outdated_pkgs="$(checkupdates | wc -l)"
 if [ ${outdated_pkgs} -gt 0 ]; then
     echo " ${outdated_pkgs} outdated packages"
 fi
