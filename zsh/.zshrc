@@ -19,6 +19,8 @@ COMPLETION_WAITING_DOTS="true"
 ENABLE_CORRECTION="true"
 HYPHEN_INSENSITIVE="true"
 
+export BAT_THEME="OneHalfLight"
+
 # font installation
 if ! [[ -f ${LOCAL_FONTS}/Fura_Mono_Medium_Nerd_Font_Complete.otf ]]; then
     echo -n " → Installing Fura Nerd Font Complete... "
