@@ -18,5 +18,6 @@
 (use-package load-relative
   :ensure t)
 (load-relative "config/ui")
+(load-relative "config/editor")
 
 ;;; init.el ends here
