@@ -5,9 +5,10 @@
 ;; use-package
 (require 'package)
 (setq package-enable-at-startup nil)
-(setq package-archives '(("org"   . "http://orgmode.org/elpa/")
-                         ("gnu"   . "http://elpa.gnu.org/packages/")
-                         ("melpa" . "https://melpa.org/packages/")))
+(setq package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
+			 ("MELPA Stable" . "http://stable.melpa.org/packages/")
+			 ("org" . "http://orgmode.org/elpa/")))
+
 (package-initialize)
 (unless (package-installed-p 'use-package)
   (package-refresh-contents)
