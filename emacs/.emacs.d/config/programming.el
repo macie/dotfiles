@@ -21,6 +21,10 @@
 (use-package smartparens
   :ensure t)
 
+;; syntax check
+(use-package flycheck
+  :ensure t)
+
 ;; version control
 (use-package magit
   :ensure t)
